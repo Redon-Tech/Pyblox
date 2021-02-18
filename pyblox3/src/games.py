@@ -2,8 +2,9 @@
 #  games.py
 #  pyblox
 #
-#  By Sanjay-B(Sanjay Bhadra)
+#  By Sanjay-B(Sanjay Bhadra) & parker02311(Redon Tech)
 #  Copyright © 2019- Sanjay-B(Sanjay Bhadra). All rights reserved.
+#  Copyright 2019-2021 Redon Tech. All rights reserved.
 #
 
 from .util import *
@@ -141,6 +142,15 @@ class Games_v1:
 			universeId = kwargs.get("universeId", None)
 			response = await Req.request(t="GET", url=f'https://games.roblox.com/v1/games/{universeId}/game-passes', cookies=auth)
 			return response[4]
+
+	class DeveloperProducts:
+
+		def __init__
+			self.Games_vq = Games_v1
+			self.auth = Games_v1.auth
+
+		# GET : "www.roblox.com/places/check-developerproduct-name?universeId={universeId}&developerProductId={productId}&developerProductName={productName}&_=1515792139751"
+		# Docs : I have no idea, I am getting this info from noblox.js
 	
 	class Votes:
 
